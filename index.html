@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ThreeSeconds — Real-life social training</title>
+  <meta name="description" content="ThreeSeconds helps you stop hesitating and start conversations in real life. Short drills, situational scripts, and progress tracking." />
+  <style>
+    :root { --bg:#0b0f1a; --card:#121a2b; --text:#eaf0ff; --muted:#a9b4d6; --accent:#6ea8ff; --accent2:#9b7bff; }
+    *{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      background:radial-gradient(1200px 800px at 20% 0%, rgba(110,168,255,.25), transparent 60%),
+                 radial-gradient(900px 700px at 90% 10%, rgba(155,123,255,.22), transparent 60%),
+                 var(--bg);
+      color:var(--text); line-height:1.5;}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0 24px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+    .logo{width:38px;height:38px;border-radius:12px;background:
+      linear-gradient(135deg, rgba(110,168,255,1), rgba(155,123,255,1));
+      display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+    .dots{display:flex;gap:5px}
+    .dot{width:6px;height:6px;border-radius:50%;background:rgba(234,240,255,.92)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);
+      background:rgba(18,26,43,.72); text-decoration:none; font-weight:600}
+    .btn:hover{border-color:rgba(255,255,255,.22); transform:translateY(-1px)}
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;align-items:stretch}
+    @media (max-width:860px){.hero{grid-template-columns:1fr}}
+    .card{border:1px solid rgba(255,255,255,.12); background:rgba(18,26,43,.62);
+      border-radius:18px;padding:18px; box-shadow:0 18px 50px rgba(0,0,0,.28)}
+    h1{font-size:44px;line-height:1.05;margin:6px 0 10px}
+    @media (max-width:520px){h1{font-size:36px}}
+    .lead{color:var(--muted);font-size:16px;margin:0 0 16px}
+    .pillrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .pill{padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);color:rgba(234,240,255,.92);font-size:13px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+    @media (max-width:860px){.grid{grid-template-columns:1fr}}
+    h2{margin:0 0 10px;font-size:18px}
+    .muted{color:var(--muted);margin:0;font-size:14px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .primary{background:linear-gradient(135deg, rgba(110,168,255,.95), rgba(155,123,255,.95));
+      border:none;color:#081022}
+    .primary:hover{filter:brightness(1.03)}
+    form{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+    input{padding:12px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);
+      background:rgba(7,10,18,.55); color:var(--text); outline:none}
+    input:focus{border-color:rgba(110,168,255,.55)}
+    small{color:rgba(169,180,214,.9)}
+    footer{margin-top:24px;color:rgba(169,180,214,.75);font-size:13px}
+    .kpi{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+    .k{padding:12px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
+    .k b{display:block;font-size:18px;margin-bottom:4px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <div class="dots">
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+        </div>
+        <div>ThreeSeconds</div>
+      </div>
+      <a class="btn" href="#waitlist">Join waitlist</a>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <div class="pillrow">
+          <div class="pill">Real-life social drills</div>
+          <div class="pill">Fast scripts</div>
+          <div class="pill">Progress tracking</div>
+        </div>
+        <h1>Stop hesitating.<br/>Start the conversation.</h1>
+        <p class="lead">
+          ThreeSeconds trains you to take action in the moment: short drills, situational openers,
+          and structured practice to get better at real-life interactions.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#waitlist">Get early access</a>
+          <a class="btn" href="#features">See features</a>
+        </div>
+
+        <div class="grid" id="features">
+          <div class="k">
+            <h2>3-second drills</h2>
+            <p class="muted">Tiny reps that build instinct and reduce overthinking.</p>
+          </div>
+          <div class="k">
+            <h2>Situational scripts</h2>
+            <p class="muted">Cafe, street, store—quick, natural openers that fit context.</p>
+          </div>
+          <div class="k">
+            <h2>Debrief + scoring</h2>
+            <p class="muted">Track attempts and learn what worked (and what didn’t).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="waitlist">
+        <h2>Join the waitlist</h2>
+        <p class="muted">Drop your email. You’ll get updates + early access when the build is ready.</p>
+
+        <!-- Replace action with your real form endpoint (Mailchimp, ConvertKit, Firebase, etc.) -->
+        <form onsubmit="event.preventDefault(); alert('Saved locally. Replace with your real email collection endpoint.');">
+          <input type="email" required placeholder="you@email.com" />
+          <button class="btn primary" type="submit">Notify me</button>
+          <small>No spam. Unsubscribe anytime.</small>
+        </form>
+
+        <div class="kpi">
+          <div class="k"><b>Goal</b><span class="muted">Daily reps</span></div>
+          <div class="k"><b>Focus</b><span class="muted">Action over theory</span></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> ThreeSeconds. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
